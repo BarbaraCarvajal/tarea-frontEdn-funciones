@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Alerta</title>
+</head>
+
+<script type="text/javascript">
+    function ConfirmDemo() {
+        //Ingresamos un mensaje a mostrar
+        var mensaje = confirm("¿Eres Feliz?");
+        //Detectamos si el usuario acepto el mensaje
+        if (mensaje) {
+            alert("¡Me alegro que lo seas :D");
+        }
+        //Detectamos si el usuario denegó el mensaje
+        else {
+            alert("Ya lo serás! :D");
+        }
+    }
+</script>
+<body>
+    <h1>Haz click para ver una alerta/mensaje</h1>
+    <img src="https://img.freepik.com/foto-gratis/alerta-notificacion-campana-emergente-recordatorio-o-signo-o-simbolo-icono-alarma-interfaz-usuario-sitio-web-aplicacion-ilustracion-representacion-3d-fondo-purpura_56104-1304.jpg?w=1060&t=st=1683230575~exp=1683231175~hmac=7ddeccd5daea0f0ba1ee3277e0ba948cebbfebca693ba5053eeafc3aaee1e408"
+        alt="imagen números">
+    <div class="contenedor">
+    <form>
+        <input type="button" onclick="ConfirmDemo()" value="Click para ver un mensaje" />
+    </form>
+</div>
+</body>
+
+</html>

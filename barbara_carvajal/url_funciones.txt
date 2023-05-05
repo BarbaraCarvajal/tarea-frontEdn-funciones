@@ -1,0 +1,18 @@
+
+Validar Rut:
+
+link: https://github.com/felipejoq/validar-rut-chileno/blob/master/js/script.js
+
+Par o impar:
+
+https://wordcodepress.com/como-saber-si-un-numero-es-par-en-javascript/
+
+primo o no:
+
+https://www.delftstack.com/es/howto/javascript/isprime-javascript/
+
+alerta:
+
+https://desarrollo-geek.net/tutoriales/javascript/javascript-alert-confirm-prompt/
+
+

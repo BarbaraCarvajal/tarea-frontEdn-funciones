@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="javaScript.js"></script>
+    <title>Validador de Rut</title>
+</head>
+
+<body>
+        <header>
+            <h1>Validador de Rut</h1>
+        </header>
+        <img src="https://i.pinimg.com/736x/41/37/23/41372366d81cccb767af0b5f7f6dd5ab.jpg" alt="Patagonia">
+
+        <div class="contenedor">
+            <form>
+                <div class="form-group">
+                    <label for="rut">RUT</label>
+                    <input type="text" class="form-control" id="rut" name="rut" oninput="checkRut(this)">
+                    <div class="alert alert-info" role="alert" id="alerta">
+                        <span id="mensaje">Ingrese un RUT en el siguiente campo de texto para validar si es correcto o
+                            no</span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary"
+                    onclick="checkRut(document.getElementById('rut'))">Validar</button>
+            </form>
+        </div>
+
+  
+
+</body>
+
+</html>

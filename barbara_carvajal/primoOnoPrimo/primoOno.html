@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>¿Primo o no?</title>
+</head>
+  <body>
+
+    <h1>Verificar si un número es primo</h1>
+    <img src="https://img.freepik.com/vector-gratis/coleccion-numeros-dibujos-animados-estilo-colorido_23-2147820416.jpg?w=900&t=st=1683229773~exp=1683230373~hmac=6293f970f75371a831ee53505f72745a03a9a27c4b261a43ca568eadd4e85a38" alt="">
+    <div class="contenedor">
+      <p>Ingrese un número:</p>
+      <input type="number" id="numero">
+      <button onclick="verificarPrimo()">Verificar</button>
+      <p id="resultado"></p>
+
+      <script>
+        function esPrimo(numero) {
+          if (numero < 2) {
+            return false;
+          }
+          for (var i = 2; i < numero; i++) {
+            if (numero % i === 0) {
+              return false;
+            }
+          }
+          return true;
+        }
+
+        function verificarPrimo() {
+          var numero = document.getElementById("numero").value;
+          if (esPrimo(numero)) {
+            document.getElementById("resultado").innerHTML =
+              "El número " + numero + " es primo";
+          } else {
+            document.getElementById("resultado").innerHTML =
+              "El número " + numero + " no es primo";
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>

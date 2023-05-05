@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>¿Par o Impar?</title>
+</head>
+
+<body>
+    <h1>Verificar si un número es par o impar</h1>
+    <img src="https://img.freepik.com/vector-gratis/numero-vector-set-fuente-3d_53876-127445.jpg?w=1380&t=st=1683213560~exp=1683214160~hmac=8e2a748a0c543801a0d60318d8addbc19e45a56bb831cb1de4276da6bfe8a282"
+        alt="imagen números">
+    <div class="contenedor">
+        <p>Ingrese un número:</p>
+        <input type="number" id="numero">
+        <button onclick="verificarParImpar()">Verificar</button>
+        <p id="resultado"></p>
+        <script>
+            function verificarParImpar() {
+                var numero = document.getElementById("numero").value;
+                if (numero % 2 == 0) {
+                    document.getElementById("resultado").innerHTML =
+                        "El número " + numero + " es par";
+                } else {
+                    document.getElementById("resultado").innerHTML =
+                        "El número " + numero + " es impar";
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>
