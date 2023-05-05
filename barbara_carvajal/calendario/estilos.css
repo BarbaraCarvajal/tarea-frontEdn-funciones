@@ -1,0 +1,29 @@
+body{
+    background-color: pink;
+    
+}
+
+#calendario {
+    margin: auto;
+    margin-top: 20px;
+    width: 450px; /* ancho fijo */
+    border: 2px solid #a47bdf; /* borde */
+    padding: 20px; /* espacio interno */
+    background-color: #cdbce2;
+    border-radius: 40px;
+    
+  }
+  
+img{
+    border-radius: 40px;
+    width: 250px;
+    margin: auto;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: #a47bdf;
+}
+
+  
