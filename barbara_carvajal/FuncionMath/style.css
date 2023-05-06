@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(202, 222, 201);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-size: 24px;
+  padding: 12px 24px;
+  border-radius: 60px;
+  border: none;
+  background-color: #e894e1;
+  color: white;
+  cursor: pointer;
+  margin-top: 24px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: #a47bdf;
+}

@@ -5,43 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.css"> <!-- Enlace a archivo CSS externo -->
     <title>¿Primo o no?</title>
 </head>
-  <body>
 
-    <h1>Verificar si un número es primo</h1>
-    <img src="https://img.freepik.com/vector-gratis/coleccion-numeros-dibujos-animados-estilo-colorido_23-2147820416.jpg?w=900&t=st=1683229773~exp=1683230373~hmac=6293f970f75371a831ee53505f72745a03a9a27c4b261a43ca568eadd4e85a38" alt="">
-    <div class="contenedor">
-      <p>Ingrese un número:</p>
-      <input type="number" id="numero">
-      <button onclick="verificarPrimo()">Verificar</button>
-      <p id="resultado"></p>
-
-      <script>
-        function esPrimo(numero) {
-          if (numero < 2) {
-            return false;
-          }
-          for (var i = 2; i < numero; i++) {
-            if (numero % i === 0) {
-              return false;
+<body>
+    <h1>Verificar si un número es primo</h1> <!-- Título principal -->
+    <img src="https://img.freepik.com/vector-gratis/coleccion-numeros-dibujos-animados-estilo-colorido_23-2147820416.jpg?w=900&t=st=1683229773~exp=1683230373~hmac=6293f970f75371a831ee53505f72745a03a9a27c4b261a43ca568eadd4e85a38" alt=""> <!-- Imagen de números -->
+    <div class="contenedor"> <!-- Contenedor principal -->
+        <p>Ingrese un número:</p> <!-- Texto para indicar al usuario que ingrese un número -->
+        <input type="number" id="numero"> <!-- Input para ingresar el número -->
+        <button onclick="verificarPrimo()">Verificar</button> <!-- Botón para ejecutar la función de verificación -->
+        <p id="resultado"></p> <!-- Párrafo para mostrar el resultado de la verificación -->
+        <script>
+            function esPrimo(numero) {
+                if (numero < 2) { // Si el número es menor a 2, no es primo
+                    return false;
+                }
+                for (var i = 2; i < numero; i++) { // Comprobar si el número es divisible por algún número entre 2 y (numero-1)
+                    if (numero % i === 0) { // Si es divisible, no es primo
+                        return false;
+                    }
+                }
+                return true; // Si no es divisible por ningún número, es primo
             }
-          }
-          return true;
-        }
 
-        function verificarPrimo() {
-          var numero = document.getElementById("numero").value;
-          if (esPrimo(numero)) {
-            document.getElementById("resultado").innerHTML =
-              "El número " + numero + " es primo";
-          } else {
-            document.getElementById("resultado").innerHTML =
-              "El número " + numero + " no es primo";
-          }
-        }
-      </script>
+            function verificarPrimo() {
+                var numero = document.getElementById("numero").value; // Obtener el valor ingresado en el input
+                if (esPrimo(numero)) { // Verificar si el número es primo utilizando la función esPrimo
+                    document.getElementById("resultado").innerHTML =
+                        "El número " + numero + " es primo"; // Mostrar mensaje indicando que el número es primo
+                } else {
+                    document.getElementById("resultado").innerHTML =
+                        "El número " + numero + " no es primo"; // Mostrar mensaje indicando que el número no es primo
+                }
+            }
+        </script>
     </div>
-  </body>
+</body>
+
 </html>

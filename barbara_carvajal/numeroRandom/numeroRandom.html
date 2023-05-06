@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css"> <!-- Enlace a archivo CSS externo -->
+    <title>Numero Random</title>
+</head>
+<body>
+    <h1>Numeros random</h1> <!-- Encabezado -->
+
+    <section class="seccion"> <!-- Sección con clase "seccion" -->
+        <button onclick="generarYMostrarNumeroAleatorio()">Generar Número Aleatorio</button> <!-- Botón para generar número aleatorio -->
+
+        <p id="numeroAleatorio"></p> <!-- Párrafo con id "numeroAleatorio" donde se mostrará el número generado -->
+    </section>
+    
+    <script>
+        // Función para generar un número aleatorio en el rango especificado
+        function generarNumeroAleatorio(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        // Función para generar y mostrar el número aleatorio en la página
+        function generarYMostrarNumeroAleatorio() {
+            // Generar un número aleatorio llamando a la función generarNumeroAleatorio y pasando el rango (1 y 100 en este caso)
+            var numeroAleatorio = generarNumeroAleatorio(1, 100);
+            // Mostrar el número aleatorio en el párrafo con id "numeroAleatorio"
+            document.getElementById("numeroAleatorio").innerText = "Número aleatorio: " + numeroAleatorio;
+        }
+    </script>
+</body>
+</html>

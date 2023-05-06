@@ -5,28 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.css"> <!-- Enlace a archivo CSS externo -->
     <title>¿Par o Impar?</title>
 </head>
 
 <body>
-    <h1>Verificar si un número es par o impar</h1>
+    <h1>Verificar si un número es par o impar</h1> <!-- Título principal -->
     <img src="https://img.freepik.com/vector-gratis/numero-vector-set-fuente-3d_53876-127445.jpg?w=1380&t=st=1683213560~exp=1683214160~hmac=8e2a748a0c543801a0d60318d8addbc19e45a56bb831cb1de4276da6bfe8a282"
-        alt="imagen números">
-    <div class="contenedor">
-        <p>Ingrese un número:</p>
-        <input type="number" id="numero">
-        <button onclick="verificarParImpar()">Verificar</button>
-        <p id="resultado"></p>
+        alt="imagen números"> <!-- Imagen de números -->
+    <div class="contenedor"> <!-- Contenedor principal -->
+        <p>Ingrese un número:</p> <!-- Texto para indicar al usuario que ingrese un número -->
+        <input type="number" id="numero"> <!-- Input para ingresar el número -->
+        <button onclick="verificarParImpar()">Verificar</button> <!-- Botón para ejecutar la función de verificación -->
+        <p id="resultado"></p> <!-- Párrafo para mostrar el resultado de la verificación -->
         <script>
             function verificarParImpar() {
-                var numero = document.getElementById("numero").value;
-                if (numero % 2 == 0) {
+                var numero = document.getElementById("numero").value; // Obtener el valor ingresado en el input
+                if (numero % 2 == 0) { // Si el número es divisible por 2 (es par)
                     document.getElementById("resultado").innerHTML =
-                        "El número " + numero + " es par";
-                } else {
+                        "El número " + numero + " es par"; // Mostrar mensaje indicando que el número es par
+                } else { // Si no es divisible por 2 (es impar)
                     document.getElementById("resultado").innerHTML =
-                        "El número " + numero + " es impar";
+                        "El número " + numero + " es impar"; // Mostrar mensaje indicando que el número es impar
                 }
             }
         </script>

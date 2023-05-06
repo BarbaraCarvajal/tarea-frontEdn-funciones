@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>🌡 Convertidor de Temperatura 🌡</title>
+</head>
+<body>
+    <h1>🌡 Convertidor de Temperatura 🌡</h1>
+    <img src="https://d20khd7ddkh5ls.cloudfront.net/fandctempconversion.jpg" alt="temperatura">
+    <div class="contenedor">
+        <label for="temperatura">Temperatura:</label>
+        <input type="number" id="temperatura">
+
+        <label for="unidad">Unidad:</label>
+        <select id="unidad">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+        </select>
+
+        <button onclick="mostrarResultado()">Convertir</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        // Función para convertir una temperatura de Celsius a Fahrenheit o viceversa
+        function convertirTemperatura(temperatura, unidad) {
+            if (unidad === "C") {
+                return (temperatura * 9/5) + 32 + "°F";
+            } else if (unidad === "F") {
+                return (temperatura - 32) * 5/9 + "°C";
+            } else {
+                return "Unidad de medida no válida";
+            }
+        }
+
+        // Función para mostrar el resultado de la conversión
+        function mostrarResultado() {
+            // Obtener los elementos del DOM
+            const temperaturaInput = document.getElementById("temperatura");
+            const unidadInput = document.getElementById("unidad");
+            const resultadoDiv = document.getElementById("resultado");
+
+            // Obtener los valores de temperatura y unidad
+            const temperatura = parseFloat(temperaturaInput.value);
+            const unidad = unidadInput.value;
+
+            // Convertir la temperatura y obtener el resultado
+            const resultado = convertirTemperatura(temperatura, unidad);
+
+            // Mostrar el resultado en el elemento de resultado del DOM
+            resultadoDiv.textContent = resultado;
+        }
+    </script>
+</body>
+</html>

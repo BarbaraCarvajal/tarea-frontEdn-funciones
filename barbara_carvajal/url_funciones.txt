@@ -1,20 +1,44 @@
 
-Validar Rut:
+1) Validar Rut:
 
 link: https://github.com/felipejoq/validar-rut-chileno/blob/master/js/script.js
 
-Par o impar:
+2) Par o impar:
 
 https://wordcodepress.com/como-saber-si-un-numero-es-par-en-javascript/
 
-primo o no:
+3) primo o no:
 
 https://www.delftstack.com/es/howto/javascript/isprime-javascript/
 
-alerta:
+4) alerta:
 
 https://desarrollo-geek.net/tutoriales/javascript/javascript-alert-confirm-prompt/
 
-calendario:
+5) calendario:
+
 https://desarrolloweb.com/articulos/1161.php
 
+6) De Celsius a Grados Fahrenheit:
+
+https://youtu.be/kPJlAwYj-U8
+
+7) Math Random:
+
+https://codigonautas.com/como-generar-colores-de-fondo-aleatorios-con-javascript/
+
+8) Prompt:
+
+https://desarrollo-geek.net/tutoriales/javascript/javascript-alert-confirm-prompt/
+
+9) Confirm
+
+https://desarrollo-geek.net/tutoriales/javascript/javascript-alert-confirm-prompt/
+
+10) Numero Random
+
+https://www.positioniseverything.net/javascript-random/
+
+Mi git hub con la tarea
+
+https://github.com/BarbaraCarvajal/tarea-frontEnd-funciones
